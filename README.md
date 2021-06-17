@@ -1,1 +1,1 @@
-# latex-circuitikzmanual
+# latex-CircuiTikZ
