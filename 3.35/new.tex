@@ -1,0 +1,10 @@
+\begin{circuitikz}[american voltages]
+    \ctikzset{label/align = straight}
+        \draw (0,2) to[V=$V_{s1}$] (0,-2);
+        \draw (8,2) to[V=$V_{s2}$] (8,-2);
+        \draw (4,2) to[R=$R_3$] (4,-2);
+        \draw (0,2) to[R=$R_1$,-*] (4,2) to[R=$R_2$] (8,2);
+        \draw (0,-2) to[R=$R_4$,-*] (4,-2) to[R=$R_5$] (8,-2);
+        \draw[thin, <-, >=triangle 45] (2,0)node{$i_1$}  ++(-70:0.8) arc (-70:250:0.8);
+        \draw[thin, <-, >=triangle 45] (6,0)node{$i_2$}  ++(-70:0.8) arc (-70:250:0.8);
+\end{circuitikz}
