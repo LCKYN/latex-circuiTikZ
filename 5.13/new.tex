@@ -1,0 +1,9 @@
+\tikzset{voltage dir=RP}
+\begin{circuitikz}[american voltages]
+    \ctikzset{label/align = straight}
+        \draw (0,0) to[V=$1V$] (0,6) to[short, -] (2,6) to[R=$10k\Omega$, -*] (2,4) to[R=$90k\Omega$] (2,0) to[short] (0,0);
+        \draw (2,4) to[short, -] ++(2,0) node[op amp, noinv input up, anchor=+](OA){} (OA.-) -- ++(0,-1) coordinate(FB) to[R=$50k\Omega$, *-*] ++(0,-2) node[ground]{} (OA.out) to[short, ->] +(0.3,0) coordinate(temp);
+        \draw (OA.out) to [short,i={$\color{red}i_0$}] (temp);
+        \draw (2,0) to[short, *-] (9,0) coordinate(g);
+        \draw (FB) to[R=$100k\Omega$] (FB -| temp) to[short, -*] (temp) to[short, -] (g |- temp) to[R=$10k\Omega$, v=$v_0$] (g);
+\end{circuitikz}
