@@ -1,0 +1,9 @@
+\begin{circuitikz}[american voltages]
+    \ctikzset{label/align = straight}
+        \draw (0,2) to[V=$V_{s1}$,f>_=$i_1$ ] (0,-2);
+        \draw (4,2) to[V=$V_{s2}$] (8,2);
+        \draw (4,2) to[R=$R_2$,f>_=$i_2$ ] (4,-2);
+        \draw (8,2) to[R=$R_3$,f>_=$i_3$ ] (8,-2);
+        \draw (0,2) to[R=$R_1$,-*] (4,2);
+        \draw (0,-2) to[short,-*] (4,-2) to[short, -] (8,-2);
+\end{circuitikz}
