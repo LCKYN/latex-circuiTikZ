@@ -1,0 +1,12 @@
+\tikzset{voltage dir=RP}
+\begin{circuitikz}[american voltages]
+    \ctikzset{label/align = straight}
+        \draw (0,0) to[V=$V_{s1}$] (0,2) to[R=$R_4$] (0,4);
+        \draw (4,0) to[short, -*] (0,0) to[short, -] (-4,0) to[R=$R_2$, -*] (-4,4) to[R=$R_3$, -*] (0,4);
+        \draw (4,4) to[V=$V_1$, *-] (0,4);
+        \draw (4,0) to[R=$R_5$] (4,4);
+        \draw (-4,4) to[short, -] (-4,8) to[R=$R_1$] (4,8) to[short] (4,4);
+        \draw[thin, <-, >=triangle 45] (0,6)node{$i_1$}  ++(-70:0.8) arc (-70:250:0.8);
+        \draw[thin, <-, >=triangle 45] (-2,2)node{$i_2$}  ++(-70:0.8) arc (-70:250:0.8);
+        \draw[thin, <-, >=triangle 45] (2,2)node{$i_3$}  ++(-70:0.8) arc (-70:250:0.8);
+\end{circuitikz}
