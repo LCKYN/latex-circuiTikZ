@@ -1,0 +1,11 @@
+\tikzset{voltage dir=RP}
+\begin{circuitikz}[american voltages]
+  \ctikzset{label/align = straight}
+  \tikzstyle{every node}=[font=\large]
+    \draw (0,0) to[short,-] (-4,0) to[R, l=$R_1$] (-4,4) to[short,*-] (-4,7) to[american current source, l=$I_{S1}$, -] (4,7) to[short, -*] (4,4);
+    \draw (0,0) to[short, *-] (4,0) to[american current source, l=$I_{S2}$, -] (4,4) to[R,l_=$R_3$, -*] (0,4) to[R, l_=$R_2$] (0,0);
+    \draw (0,4) to[american voltage source,l_=$V_s$,-] (-4,4);
+    \node at (-4.3,4.3) (v1){$v_1$};
+    \node at (0,4.3) (v2){$v_2$};
+    \node at (4.3,4.3) (v3){$v_3$};
+\end{circuitikz}
