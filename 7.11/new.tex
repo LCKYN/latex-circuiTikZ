@@ -1,0 +1,9 @@
+\begin{circuitikz}[american voltages]
+    \ctikzset{label/align = straight}
+    \tikzstyle{every node}=[font=\large]
+    \tikzset{voltage dir=RP}
+      \draw (0,0) to[american voltage source, l=$V_{S}$] ++(0,3) to[R, l_=$R_1$] ++(3,0) to[opening switch,bipoles/length=3cm] ++(3,0) to[L,l=$L$,*-] ++(3,0) to[R, l_=$R_3$,i>^=$i_l(t)$] ++(0,-3) to[short] ++(-9,0);
+      \draw (6,3) to[R,l_=$R_2$,-*] ++(0,-3);
+      \node at(4.5,4) {$t=0$};
+  \end{circuitikz}
+  
