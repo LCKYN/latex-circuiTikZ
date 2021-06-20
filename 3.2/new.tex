@@ -1,10 +1,11 @@
 \tikzset{voltage dir=RP}
 \begin{circuitikz}[american voltages]
-    \ctikzset{label/align = straight}
-    \tikzstyle{every node}=[font=\huge]
-        \draw (-2,4) to[american current source, l=$I_{S1}$, *-*] (2,4) to[R, l_=$R_4$, -*] ++(0,-4) to[short, -*] (0,0) node[ground]{};
-        \draw (0,0) to[short] (-4,0) to[R=$R_1$] ++(0,4) to[short] (-2,4) to[R,l_=$R_2$,-*] ++(0,-4);
-        \draw (2,0) to[short] (4,0) to[american current source, l=$I_{S2}$] (4,4) to[short] ++(-2,0) to[short] ++(0,2) to[R,l_=$R_3$] ++(-4,0) to[short] ++(0,-2);
-        \node[color=purple]at (2.35,4.35) (v2){$v_2$};
-        \node[color=purple] at (-2.35,4.35) (v1){$v_1$};
+  \ctikzset{label/align = straight}
+  \tikzstyle{every node}=[font=\LARGE]
+    \draw (0,0) to[short,-] (-4,0) to[R, l=$R_1$] (-4,4) to[short,*-] (-4,7) to[american current source, l=$I_{S1}$, -] (4,7) to[short, -*] (4,4);
+    \draw (0,0) to[short, *-] (4,0) to[american current source, l=$I_{S2}$, -] (4,4) to[R,l_=$R_3$, -*] (0,4) to[R, l_=$R_2$] (0,0);
+    \draw (0,4) to[american voltage source,l_=$V_s$,-] (-4,4);
+    \node[color=purple] at (-4.3,4.3) (v1){$v_1$};
+    \node[color=purple] at (0,4.3) (v2){$v_2$};
+    \node[color=purple] at (4.3,4.3) (v3){$v_3$};
 \end{circuitikz}
