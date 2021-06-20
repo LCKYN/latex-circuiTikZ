@@ -1,0 +1,11 @@
+\begin{circuitikz}[american voltages, american inductors]
+    \ctikzset{label/align = straight}
+    \tikzstyle{every node}=[font=\large]
+    \tikzset{voltage dir=RP}
+        \draw (0,0) node(s){};
+        \draw (4,5) node[](){$t=0$};
+        \draw (4,4) node[cute spdt up arrow, xscale=-1](sw){};
+        \draw(sw.in) to[L,l=$L$, i=$\color{purple}{i_l(t)}$] (8,4) to[R,l=$R_2$] (8,0) to[short] (0,0);
+        \draw(sw-out 2.s) to[C, l=$C$,v=$\color{purple}{v_c(t)}\ $, -*] (sw.cout 2|-s);
+        \draw (0,0) to[american voltage source, l=$V_{S}$] (s |- sw.out 1) to[R, l=$R_1$] (sw.out 1);
+  \end{circuitikz}
