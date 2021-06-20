@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.4.2)  20 JUN 2021 15:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.4.2)  20 JUN 2021 19:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -452,24 +452,19 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \realshift=\dimen281
 \realshift=\dimen282
 \realshift=\dimen283
-\realshift=\dimen284
-
-Overfull \hbox (128.94283pt too wide) in paragraph at lines 88--89
-[][] 
- []
 
 Preview: Tightpage 0 0 0 0
 [1{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (/Users/lckyn/Documents/repository/latex-circuiTikZ/temp.aux) ) 
 Here is how much of TeX's memory you used:
- 25821 strings out of 480608
- 639954 string characters out of 5903631
- 994561 words of memory out of 5000000
- 41386 multiletter control sequences out of 15000+600000
+ 25630 strings out of 480608
+ 635340 string characters out of 5903631
+ 978113 words of memory out of 5000000
+ 41195 multiletter control sequences out of 15000+600000
  534937 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,7n,79p,459b,932s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,7n,71p,459b,892s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on /Users/lckyn/Documents/repository/latex-circuiTikZ/temp.pdf (1 page, 28576 bytes).
+Output written on /Users/lckyn/Documents/repository/latex-circuiTikZ/temp.pdf (1 page, 26195 bytes).
 PDF statistics:
  23 PDF objects out of 1000 (max. 8388607)
  16 compressed objects within 1 object stream
