@@ -1,0 +1,12 @@
+\begin{circuitikz}[american voltages, american inductors]
+    \ctikzset{label/align = straight}
+    \tikzstyle{every node}=[font=\LARGE]
+    \tikzset{voltage dir=RP}
+        \draw (0,0) node(s){};
+        \draw (s) to[american current source, l=$V_{S}$] ++(0,5);
+        \draw (3,5) to[R, l=$R_1$] ++(0,-5);
+        \draw (6,5) to[C, l_=$C$, v^=$\color{purple}{\ v_c(t)}$] ++(0,-5);
+        \draw (9,5) to[L, l_=$L$, i>^=$\color{purple}{\ i_l(t)}$] ++(0,-5);
+        \draw (0,0) to[short, -*] ++(3,0) to[short, -*] ++(3,0) to[short, -] ++(3,0);
+        \draw (0,5) to[short, -*] ++(3,0) to[short, -*] ++(3,0) to[short, -] ++(3,0);
+ \end{circuitikz}
