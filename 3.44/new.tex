@@ -1,7 +1,10 @@
 \begin{circuitikz}[american voltages]
     \ctikzset{label/align = straight}
     \tikzstyle{every node}=[font=\large]
-        \draw (0,0) to[american current source, l=$I_{S1}$, *-*] ++(0,3) to[R, l_=$R_3$,-*] ++(-3,0) to[R, l_=$R_4$] ++(0,-3) to[short] ++(3,0);
-        \draw (-3,3) to[R,l=$R_1$] ++(0,3) to[american voltage source,l=$V_{S1}$] ++(3,0) to[R, l_=$R_2$, *-] ++(0,-3);
-        \draw (0,6) to[short] ++(3,0) to[american voltage source,l_=$V_{S2}$] ++(0,-6)to[short] (0,0);
+        \draw (0,0) to[american current source, l_=$I_{S1}$, *-*] ++(0,3) to[R, l_=$R_3$,-*] ++(-3,0) to[R, l_=$R_4$] ++(0,-3) to[short] ++(3,0);
+        \draw (-3,3) to[R,l=$R_1$] ++(0,3) to[american voltage source,l=$V_{S1}$] ++(3,0) to[R, l^=$R_2$, *-] ++(0,-3);
+        \draw (0,6) to[short] ++(3,0) to[american voltage source,l^=$V_{S2}$] ++(0,-6)to[short] (0,0);
+        \draw[thin, <-, >=triangle 45,color=purple] (-1.5,4.5)node{$i_1$}  ++(-70:0.6) arc (-70:160:0.6);
+        \draw[thin, <-, >=triangle 45,color=purple] (-1.5,1.5)node{$i_2$}  ++(-70:0.6) arc (-70:160:0.6);
+        \draw[thin, <-, >=triangle 45,color=purple] (1.5,3)node{$i_3$}  ++(-70:0.6) arc (-70:160:0.6);
 \end{circuitikz}
